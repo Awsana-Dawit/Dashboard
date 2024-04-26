@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="dashboard Setting page Controls" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Setting</title>
+  </head>
+  <body>
+    <div class="pages d-flex">
+      <aside class="sidebar">
+        <p class="dashboard-author">Awsana</p>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="index.html" class="main-nav-link">
+                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="setting.html" class="main-nav-link active">
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="profile.html" class="main-nav-link">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="project.html" class="main-nav-link">
+                <i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="course.html" class="main-nav-link">
+                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="friend.html" class="main-nav-link">
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Friends</span>
+              </a>
+            </li>
+            <li>
+              <a href="file.html" class="main-nav-link">
+                <i class="fa-regular fa-file fa-fw"></i>
+                <span>Files</span>
+              </a>
+            </li>
+            <li>
+              <a href="plan.html" class="main-nav-link">
+                <i class="fa-regular fa-credit-card fa-fw"></i>
+                <span>Plans</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content">
+        <header class="header between-flex">
+          <form action="#" class="form-search">
+            <input type="search" name="search" placeholder="Type A Keyword" />
+          </form>
+          <div class="icons">
+            <span class="notification">
+              <i class="fa-regular fa-bell"></i>
+            </span>
+            <a href="profile.html" target="_blank">
+              <img
+              src="imgs/avatar.png"
+              alt="Dashboard Profile image of Awsana"
+            />
+            </a>
+          </div>
+        </header>
+        <main>
+          <h1 class="heading-primary">Settings</h1>
+          <div class="grid wrapper setting">
+            <div class="wrapper-item">
+              <h2 class="heading-secondary mb-1">Site Control</h2>
+              <p class="sub-heading c-grey mb-2">
+                Control The Website If There Is Maintenance
+              </p>
+              <div class="site mb-1">
+                <div class="info">
+                  <p class="sub-heading mb-1">Website Control</p>
+                  <p class="sub-heading c-grey">
+                    Open/Close Website And Type The Reason
+                  </p>
+                </div>
+                <div>
+                  <label>
+                    <input type="checkbox" class="toggle-checkbox" />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <textarea placeholder="Close Message Content"></textarea>
+            </div>
+            <div class="wrapper-item">
+              <h2 class="heading-secondary mb-1">General Info</h2>
+              <p class="sub-heading c-grey mb-2">
+                General Information About Your Account
+              </p>
+              <form action="#" class="generalInfo-form">
+                <div>
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    name="first Name"
+                    id="FirstName"
+                  />
+                </div>
+                <div>
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    name="Last Name"
+                    id="lastName"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    placeholder="@eaxmple.com"
+                    name="Email"
+                    id="email"
+                    disabled
+                  />
+                  <a href="#" class="c-blue">Change</a>
+                </div>
+              </form>
+            </div>
+            <div class="wrapper-item">
+              <h2 class="sub-heading mb-1">Security Info</h2>
+              <p class="sub-heading c-grey mb-2">
+                Security Information About Your Account
+              </p>
+              <div class="security">
+                <div class="data horizontal-line">
+                  <div class="info">
+                    <p class="sub-heading mb-sm">Password</p>
+                    <p class="sub-heading c-grey">Last Change On 25/10/2021</p>
+                  </div>
+                  <a href="#" class="btn btn-primary"> Change</a>
+                </div>
+                <div class="data horizontal-line">
+                  <div class="info">
+                    <p class="sub-heading mb-sm">Two-Factor Authentication</p>
+                    <p class="sub-heading c-grey">Enable/Disable The Feature</p>
+                  </div>
+                  <div>
+                    <label>
+                      <input type="checkbox" class="toggle-checkbox" />
+                      <div class="toggle-switch"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="data horizontal-line">
+                  <div class="info">
+                    <p class="sub-heading mb-sm">Devices</p>
+                    <p class="sub-heading c-grey">
+                      Check The Login Devices List
+                    </p>
+                  </div>
+                  <a href="#" class="btn bg-eee c-black device">Device</a>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-item">
+              <h2 class="heading-secondary mb-1">Social Info</h2>
+              <p class="sub-heading c-grey mb-1">Social Media Information</p>
+              <form action="#" class="socialInfo-form">
+                <div class="socialIcon">
+                  <i class="fa-brands fa-square-x-twitter fa-lg twitter"></i>
+                  <input
+                    type="text"
+                    name="twitter"
+                    placeholder="Twitter Username"
+                  />
+                </div>
+                <div class="socialIcon">
+                  <i class="fa-brands fa-facebook facebook"></i>
+                  <input
+                    type="text"
+                    name="facebook"
+                    placeholder="Facebook Username"
+                  />
+                </div>
+                <div class="socialIcon">
+                  <i class="fa-brands fa-linkedin linkedin"></i>
+                  <input
+                    type="text"
+                    name="linkedin"
+                    placeholder="Linkedin Username"
+                  />
+                </div>
+                <div class="socialIcon">
+                  <i class="fa-brands fa-youtube youtube"></i>
+                  <input
+                    type="text"
+                    name="youtube"
+                    placeholder="Youtube Username"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="wrapper-item">
+              <h2 class="heading-secondary mb-1">Widgets Control</h2>
+              <p class="sub-heading mb-2 c-grey">Show/Hide Widgets</p>
+              <div class="wideget-control">
+                <div class="controls">
+                  <input
+                    type="checkbox"
+                    name="Quick Draft"
+                    id="one"
+                    class="toggle-radio"
+                    checked
+                  />
+                  <label for="one">Quick Draft</label>
+                </div>
+                <div class="controls">
+                  <input
+                    type="checkbox"
+                    name="Yearly Targets"
+                    id="two"
+                    class="toggle-radio"
+                    checked
+                  />
+                  <label for="two">Yearly Targets</label>
+                </div>
+                <div class="controls">
+                  <input
+                    type="checkbox"
+                    name="Tickets Statistics"
+                    id="three"
+                    class="toggle-radio"
+                    checked
+                  />
+                  <label for="three">Tickets Statistics</label>
+                </div>
+                <div class="controls">
+                  <input
+                    type="checkbox"
+                    name="Latest News"
+                    id="four"
+                    class="toggle-radio"
+                    checked
+                  />
+                  <label for="four">Latest News</label>
+                </div>
+                <div class="controls">
+                  <input
+                    type="checkbox"
+                    name="Latest Tasks"
+                    id="five"
+                    class="toggle-radio"
+                  />
+                  <label for="five">Latest Tasks</label>
+                </div>
+                <div class="controls">
+                  <input
+                    type="checkbox"
+                    name="Top Search Items"
+                    id="six"
+                    class="toggle-radio"
+                    checked
+                  />
+                  <label for="six">Top Search Items</label>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-item">
+              <h2 class="heading-secondary mb-1">Backup Manager</h2>
+              <p class="sub-heading c-grey mb-2">
+                Control Backup Time And Location
+              </p>
+              <div class="backup mb-2">
+                <div class="backup-date">
+                  <input
+                    type="radio"
+                    name="date"
+                    id="daily"
+                    value="daily"
+                    class="toggle-checkbox"
+                  />
+                  <label for="daily">Daily</label>
+                </div>
+                <div class="backup-date">
+                  <input
+                    type="radio"
+                    name="date"
+                    id="weekly"
+                    value="weekly"
+                    class="toggle-checkbox"
+                  />
+                  <label for="weekly">Weekly</label>
+                </div>
+                <div class="backup-date">
+                  <input
+                    type="radio"
+                    name="date"
+                    id="monthly"
+                    value="monthly"
+                    class="toggle-checkbox"
+                  />
+                  <label for="monthly">Monthly</label>
+                </div>
+              </div>
+              <div class="servers">
+                <input
+                  type="radio"
+                  name="servers"
+                  id="server-one"
+                  class="toggle-radio"
+                />
+                <div class="server">
+                  <label for="server-one">
+                    <i class="fa-solid fa-server"></i>
+                    <p class="heading-tertiary">Megaman</p>
+                  </label>
+                </div>
+                <input
+                  type="radio"
+                  name="servers"
+                  id="server-two"
+                  class="toggle-radio"
+                />
+                <div class="server">
+                  <label for="server-two">
+                    <i class="fa-solid fa-server"></i>
+                    <p class="heading-tertiary">Zero</p>
+                  </label>
+                </div>
+                <input
+                  type="radio"
+                  name="servers"
+                  id="server-three"
+                  class="toggle-radio"
+                />
+                <div class="server">
+                  <label for="server-three">
+                    <i class="fa-solid fa-server"></i>
+                    <p class="heading-tertiary">Sigma</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

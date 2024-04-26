@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="dashboard main page where all information available" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="pages d-flex">
+      <aside class="sidebar">
+        <p class="dashboard-author">Awsana</p>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="index.html" class="main-nav-link active">
+                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="setting.html" class="main-nav-link">
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="profile.html" class="main-nav-link">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="project.html" class="main-nav-link">
+                <i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="course.html" class="main-nav-link">
+                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="friend.html" class="main-nav-link">
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Friends</span>
+              </a>
+            </li>
+            <li>
+              <a href="file.html" class="main-nav-link">
+                <i class="fa-regular fa-file fa-fw"></i>
+                <span>Files</span>
+              </a>
+            </li>
+            <li>
+              <a href="plan.html" class="main-nav-link">
+                <i class="fa-regular fa-credit-card fa-fw"></i>
+                <span>Plans</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content">
+        <header class="header between-flex">
+          <form action="#" class="form-search">
+            <input type="search" name="search" placeholder="Type A Keyword" />
+          </form>
+          <div class="icons">
+            <span class="notification">
+              <i class="fa-regular fa-bell"></i>
+            </span>
+            <a href="profile.html" target="_blank">
+              <img
+              src="imgs/avatar.png"
+              alt="Dashboard Profile image of Awsana"
+            />
+            </a>
+          </div>
+        </header>
+        <main>
+          <h1 class="heading-primary">Dashboard</h1>
+          <div class="wrapper grid">
+            <div class="welcome">
+              <div class="intro bg-eee">
+                <div>
+                  <h2 class="heading-secondary">Welcome</h2>
+                  <p class="author-name">Awsana</p>
+                </div>
+                <img
+                  src="imgs/welcome.png"
+                  alt="people discussing on the desk for thier stastics"
+                  class="hide-mobile"
+                />
+              </div>
+              <div class="img-avatar">
+                <img
+                  src="imgs/avatar.png"
+                  alt="Dashboard Profile image of Awsana"
+                  class="avatar"
+                />
+              </div>
+              <div class="welcome-content">
+                <div class="welcome-body">
+                  <div>Awsana <span>Developer</span></div>
+                  <div>80 <span>Projects</span></div>
+                  <div>$8500<span>Earned</span></div>
+                </div>
+                <a href="profile.html" class="btn btn-primary margin-left-auto"
+                  >Profile</a
+                >
+              </div>
+            </div>
+            <div class="quick-draft wrapper-item">
+              <h2 class="heading-secondary mb-1">Quick Draft</h2>
+              <p class="sub-heading c-grey mb-2">
+                Write A Draft For Your Ideas
+              </p>
+              <form action="#">
+                <input type="text" placeholder="Title" name="title" />
+                <textarea
+                  placeholder="Your Thought"
+                  name="Your Thought"
+                ></textarea>
+                <button type="submit" class="btn btn-primary margin-left-auto">
+                  Save
+                </button>
+              </form>
+            </div>
+            <div class="yearly-targets wrapper-item">
+              <h2 class="heading-secondary mb-1">Yearly Target</h2>
+              <p class="sub-heading c-grey mb-2">Target Of The Year</p>
+              <ul class="targets column-flex">
+                <li class="target row target-blue">
+                  <span class="target-icon c-blue">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </span>
+                  <div class="target-details">
+                    <span class="target-title">Money</span>
+                    <p class="target-yearly"><span>$</span>20.000</p>
+                    <div class="progress">
+                      <span class="progress-percent bg-blue" style="width: 80%">
+                        <span class="bg-blue">80%</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="target row target-orange">
+                  <span class="target-icon c-orange">
+                    <i class="fa-solid fa-code"></i>
+                  </span>
+                  <div class="target-details">
+                    <span class="target-title">Projects</span>
+                    <p class="target-yearly">24</p>
+                    <div class="progress">
+                      <span
+                        class="progress-percent bg-orange"
+                        style="width: 55%"
+                      >
+                        <span class="bg-orange">55%</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="target row target-green">
+                  <span class="target-icon c-green">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  <div class="target-details">
+                    <span class="target-title">Team</span>
+                    <p class="target-yearly">12</p>
+                    <div class="progress">
+                      <span
+                        class="progress-percent bg-green"
+                        style="width: 75%"
+                      >
+                        <span class="bg-green">75%</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tickets wrapper-item">
+              <h2 class="heading-secondary mb-1">Tickets Statistics</h2>
+              <p class="sub-heading c-grey mb-2">
+                Everything About Support Tickets
+              </p>
+              <div class="chart">
+                <canvas
+                  id="stasticsChart"
+                  role="img"
+                  aria-label="Stastics Chart for tickets"
+                ></canvas>
+              </div>
+            </div>
+            <div class="latest-news wrapper-item">
+              <h2 class="heading-secondary mb-2">Latest News</h2>
+              <div class="news-row horizontal-line mb-2">
+                <img
+                  src="imgs/news-01.png"
+                  alt="New SASS Examples & Tutorials"
+                />
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Created SASS Section</h3>
+                  <p class="sub-heading c-grey">
+                    New SASS Examples & Tutorials
+                  </p>
+                </div>
+                <span class="rounded-shape bg-eee">3 Days Ago</span>
+              </div>
+              <div class="news-row horizontal-line mb-2">
+                <img
+                  src="imgs/news-02.png"
+                  class="news-img"
+                  alt="A Brand New Website Design"
+                />
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Changed The Design</h3>
+                  <p class="sub-heading c-grey">A Brand New Website Design</p>
+                </div>
+                <span class="rounded-shape bg-eee">5 Days Ago</span>
+              </div>
+              <div class="news-row horizontal-line mb-2">
+                <img
+                  src="imgs/news-03.png"
+                  alt="3 Developers Joined The Team"
+                />
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Team Increased</h3>
+                  <p class="sub-heading c-grey">3 Developers Joined The Team</p>
+                </div>
+                <span class="rounded-shape bg-eee">7 Days Ago</span>
+              </div>
+              <div class="news-row horizontal-line">
+                <img
+                  src="imgs/news-04.png"
+                  alt="Many New Payment Gateways Added"
+                />
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Added Payment Gateway</h3>
+                  <p class="sub-heading c-grey">
+                    Many New Payment Gateways Added
+                  </p>
+                </div>
+                <span class="rounded-shape bg-eee">9 Days Ago</span>
+              </div>
+            </div>
+            <div class="latest-tasks wrapper-item">
+              <h2 class="heading-secondary mb-2">Latest Tasks</h2>
+              <div class="tasks row horizontal-line mb-1">
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Record One New Video</h3>
+                  <p class="sub-heading c-grey">
+                    Record Python Create Exe Project
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </div>
+              <div class="tasks row horizontal-line mb-1">
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Write Article</h3>
+                  <p class="sub-heading c-grey">
+                    Write Low Level vs High Level Languages
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </div>
+              <div class="tasks row horizontal-line mb-1">
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Finish Project</h3>
+                  <p class="sub-heading c-grey">
+                    Publish Academy Programming Project
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </div>
+              <div class="tasks row horizontal-line mb-1 done">
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Attend The Meeting</h3>
+                  <p class="sub-heading c-grey">
+                    Attend The Project Business Analysis Meeting
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </div>
+              <div class="tasks row horizontal-line">
+                <div class="info">
+                  <h3 class="heading-tertiary mb-1">Finish Lesson</h3>
+                  <p class="sub-heading c-grey">Finish Teaching Flex Box</p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </div>
+            </div>
+            <div class="search-items wrapper-item">
+              <h2 class="heading-secondary mb-2">Top Search Items</h2>
+              <div class="between-flex mb-3">
+                <p class="sub-heading c-grey">Keyword</p>
+                <p class="sub-heading c-grey">Search</p>
+              </div>
+              <div class="search-item column-flex">
+                <div class="item between-flex">
+                  <p class="sub-heading">Programming</p>
+                  <span class="rounded-shape bg-eee">220</span>
+                </div>
+                <div class="item between-flex">
+                  <p class="sub-heading">JavaScript</p>
+                  <span class="rounded-shape bg-eee">180</span>
+                </div>
+                <div class="item between-flex">
+                  <p class="sub-heading">PHP</p>
+                  <span class="rounded-shape bg-eee">160</span>
+                </div>
+                <div class="item between-flex">
+                  <p class="sub-heading">Code</p>
+                  <span class="rounded-shape bg-eee">145</span>
+                </div>
+                <div class="item between-flex">
+                  <p class="sub-heading">Design</p>
+                  <span class="rounded-shape bg-eee">110</span>
+                </div>
+                <div class="item between-flex">
+                  <p class="sub-heading">Logic</p>
+                  <span class="rounded-shape bg-eee">95</span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-uploads wrapper-item">
+              <h2 class="heading-secondary mb-3">Latest Uploads</h2>
+              <ul class="uploads column-flex">
+                <li class="upload row horizontal-line">
+                  <img src="imgs/pdf.svg" class="uploaded-img" alt="my file" />
+                  <div class="info">
+                    <div class="sub-heading">my-file.pdf</div>
+                    <div class="sub-heading c-grey">Awsana</div>
+                  </div>
+                  <span class="rounded-shape bg-eee">2.9mb</span>
+                </li>
+                <li class="upload row horizontal-line">
+                  <img
+                    src="imgs/avi.svg"
+                    class="uploaded-img"
+                    alt="My Video File photo"
+                  />
+                  <div class="info">
+                    <div class="sub-heading">My-Video-File.avi</div>
+                    <div class="sub-heading c-grey">Dawit</div>
+                  </div>
+                  <span class="rounded-shape bg-eee">4.9mb</span>
+                </li>
+                <li class="upload row horizontal-line">
+                  <img
+                    src="imgs/psd.svg"
+                    class="uploaded-img"
+                    alt="My Psd File Photo"
+                  />
+                  <div class="info">
+                    <div class="sub-heading">My-Psd-File.pdf</div>
+                    <div class="sub-heading c-grey">Eyasu</div>
+                  </div>
+                  <span class="rounded-shape bg-eee">4.5mb</span>
+                </li>
+                <li class="upload row horizontal-line">
+                  <img
+                    src="imgs/zip.svg"
+                    class="uploaded-img"
+                    alt="Zip file photo"
+                  />
+                  <div class="info">
+                    <div class="sub-heading">My-Zip-File.pdf</div>
+                    <div class="sub-heading c-grey">User</div>
+                  </div>
+                  <span class="rounded-shape bg-eee">8.9mb</span>
+                </li>
+                <li class="upload row horizontal-line">
+                  <img
+                    src="imgs/dll.svg"
+                    class="uploaded-img"
+                    alt="ddl File photo"
+                  />
+                  <div class="info">
+                    <div class="sub-heading">My-DLL-File.pdf</div>
+                    <div class="sub-heading c-grey">Admin</div>
+                  </div>
+                  <span class="rounded-shape bg-eee">4.9mb</span>
+                </li>
+                <li class="upload row horizontal-line">
+                  <img
+                    src="imgs/eps.svg"
+                    class="uploaded-img"
+                    alt="My Eps File Photo"
+                  />
+                  <div class="info">
+                    <div class="sub-heading">My-Eps-File.pdf</div>
+                    <div class="sub-heading c-grey">Designer</div>
+                  </div>
+                  <span class="rounded-shape bg-eee">8.9mb</span>
+                </li>
+              </ul>
+            </div>
+            <div class="last-projects wrapper-item">
+              <h2 class="heading-secondary mb-3">Last Projects Progress</h2>
+              <ul class="project-progress column-flex">
+                <li class="progress-list done">Got The Project</li>
+                <li class="progress-list done">Started The Project</li>
+                <li class="progress-list done">The Project About To Finish</li>
+                <li class="progress-list current">Test The Project</li>
+                <li class="progress-list">Finish The Project & Get Money</li>
+              </ul>
+              <img
+                src="imgs/project.png"
+                alt="launch icon images"
+                class="launch-icon hide-mobile"
+              />
+            </div>
+            <div class="reminders wrapper-item">
+              <h2 class="heading-secondary mb-3">Reminders</h2>
+              <ul class="reminder-list column-flex">
+                <li>
+                  <span class="key bg-blue">&nbsp;</span>
+                  <div class="reminder border-blue">
+                    <h3 class="heading-tertiary mb-1">Check My Tasks List</h3>
+                    <span class="c-grey">28/09/2022 &mdash; 12:00am</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="key bg-green">&nbsp;</span>
+                  <div class="reminder border-green">
+                    <h3 class="heading-tertiary mb-1">Check My Projects</h3>
+                    <span class="c-grey">26/10/2022 &mdash; 12:00am</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="key bg-orange">&nbsp;</span>
+                  <div class="reminder border-orange">
+                    <h3 class="heading-tertiary mb-1">Call All My Clients</h3>
+                    <span class="c-grey">05/11/2022 &mdash; 12:00am</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="key bg-red">&nbsp;</span>
+                  <div class="reminder border-red">
+                    <h3 class="heading-tertiary mb-1">
+                      Finish The Development Workshop
+                    </h3>
+                    <span class="c-grey">20/12/2022 &mdash; 12:00am</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="latest-post wrapper-item">
+              <h2 class="heading-secondary mb-3">Latest Post</h2>
+              <div class="post-profile horizontal-line">
+                <img
+                  src="imgs/avatar.png"
+                  alt="Dashboard Profile image of Awsana"
+                  class="avatar"
+                />
+                <div class="info">
+                  <p class="heading-tertiary mb-1">Awsana Dawit</p>
+                  <span class="sub-heading c-grey">About 3 Hours Ago</span>
+                </div>
+              </div>
+              <p class="post-content">
+                You Can Fool All Of The People Some Of The Time, And Some Of The
+                People All Of The Time, But You Can't Fool All Of The People All
+                Of The Time.
+              </p>
+              <div class="post-status between-flex">
+                <div>
+                  <i class="fa-regular fa-heart c-grey"></i>
+                  <span class="post-like c-grey">1.8K</span>
+                </div>
+                <div>
+                  <i class="fa-regular fa-comments c-grey"></i>
+                  <span class="post-comment c-grey">500</span>
+                </div>
+              </div>
+            </div>
+            <div class="social-media wrapper-item">
+              <h2 class="heading-secondary mb-3">Social Media Stats</h2>
+              <div class="media column-flex">
+                <div class="box twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <span class="info">90K Followers</span>
+                  <a href="#" class="rounded-shape">Follow</a>
+                </div>
+                <div class="box facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <span class="info">2M Like</span>
+                  <a href="#" class="rounded-shape">Like</a>
+                </div>
+                <div class="box youtube">
+                  <i class="fa-brands fa-youtube"></i>
+                  <span class="info">1M Subs</span>
+                  <a href="#" class="rounded-shape">Subscribe</a>
+                </div>
+                <div class="box linkedin">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span class="info">70K Followers</span>
+                  <a href="#" class="rounded-shape">Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects wrapper-item">
+            <h2 class="heading-secondary mb-3">Projects</h2>
+            <div class="responsive-table">
+              <table class="project-list">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Finish Date</th>
+                    <th>Client</th>
+                    <th>Price</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td class="team">
+                      <img src="imgs/team-01.png" alt="Team of Project " />
+                      <img src="imgs/team-02.png" alt="Team of Project" />
+                      <img src="imgs/team-03.png" alt="Team of Project" />
+                      <img src="imgs/team-05.png" alt="Team of Project" />
+                    </td>
+                    <td>
+                      <span class="rounded-shape bg-orange">Pending</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Awsana Shop</td>
+                    <td>12 Oct 2021</td>
+                    <td>Awsana Company</td>
+                    <td>$1500</td>
+                    <td class="team">
+                      <img src="imgs/team-01.png" alt="Team of Project " />
+                      <img src="imgs/team-02.png" alt="Team of Project" />
+                      <img src="imgs/team-05.png" alt="Team of Project" />
+                    </td>
+                    <td>
+                      <span class="rounded-shape bg-blue">In Progress</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Bouba App</td>
+                    <td>05 Sep 2021</td>
+                    <td>Bouba</td>
+                    <td>$800</td>
+                    <td class="team">
+                      <img src="imgs/team-02.png" alt="Team of Project" />
+                      <img src="imgs/team-03.png" alt="Team of Project" />
+                    </td>
+                    <td>
+                      <span class="rounded-shape bg-green">Completed</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Hosea Website</td>
+                    <td>22 May 202</td>
+                    <td>Hosea</td>
+                    <td>$600</td>
+                    <td class="team">
+                      <img src="imgs/team-01.png" alt="Team of Project" />
+                      <img src="imgs/team-02.png" alt="Team of Project" />
+                    </td>
+                    <td>
+                      <span class="rounded-shape bg-green">Completed</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>David Website</td>
+                    <td>24 May 2021</td>
+                    <td>David</td>
+                    <td>$300</td>
+                    <td class="team">
+                      <img src="imgs/team-01.png" alt="Team of Project" />
+                      <img src="imgs/team-03.png" alt="Team of Project" />
+                    </td>
+                    <td><span class="rounded-shape bg-red">Rejected</span></td>
+                  </tr>
+                  <tr>
+                    <td>Arena Application</td>
+                    <td>01 Mar 2021</td>
+                    <td>Arena Company</td>
+                    <td>$2600</td>
+                    <td class="team">
+                      <img src="imgs/team-01.png" alt="Team of Project " />
+                      <img src="imgs/team-02.png" alt="Team of Project" />
+                      <img src="imgs/team-03.png" alt="Team of Project" />
+                      <img src="imgs/team-04.png" alt="Team of Project" />
+                    </td>
+                    <td>
+                      <span class="rounded-shape bg-green">Completed</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
